@@ -17,7 +17,7 @@ public class BodyMassIndex {
         double koerperGroessePow2 = 0;
         if ((gewichtInput > 0) && (koerpergroesseInput > 0)) {
             koerperGroessePow2 = Math.pow(koerpergroesseInput, 2);
-            bmi = (int)(gewichtInput / koerpergroesseInput);
+            bmi = (int)(gewichtInput / koerperGroessePow2);
             System.out.println("BMI: " + bmi);
         }
         else {
